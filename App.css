@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333; /* Dark gray text */
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #fff; /* White background */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #f5f5f5; /* Light gray input background */
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: black; 
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.todo-input::placeholder {
+  color: #aaa; /* Light gray placeholder text */
+}
+
+.todo-btn {
+  background: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.todo-btn:hover {
+  background: #45a049; /* Darker green on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4CAF50; /* Green background */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 1rem;
+}
+
+.Todo:hover {
+  background: #45a049; /* Darker green on hover */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: white; /* Dark gray text */
+  cursor: pointer;
+}
+
+.completed {
+  color: #999; /* Light gray text */
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
